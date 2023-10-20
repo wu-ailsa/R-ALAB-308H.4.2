@@ -40,7 +40,29 @@ console.log("This is the end of Fizz Buzz");
 ////////////////////////////////
 // Wild Wild Life 
 ////////////////////////////////
-
+//Given:
+const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
+const sharky = ["Sharky", "shark", 20, "Left Coast"]
+const plantee = ["Plantee", "plant",  5000 , "Mordor"]
+const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
+const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
+//Alter:
+// 1. Plantee just had her birthday; change Plantee's array to reflect her being a year older.
+let planteeAge = plantee.indexOf(5000);
+if (planteeAge !== 5001) {
+    plantee[planteeAge] = 5001;
+}
+console.log(plantee);
+// 2. Change Wolfy's hometown from "Yukon Territory" to "Gotham City".
+wolfy[3] = wolfy[3].replace('Yukon Territory', 'Gotham City');
+console.log(wolfy);
+// 3. Give D'Art a second hometown by adding "Hawkins"
+dart.push('Hawkins');
+console.log(dart);
+// 4. Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array and replace it with "Gameboy".
+let porgeeIsBossy = wolfy.splice(0,1, 'Gameboy')
+console.log(wolfy);
+console.log("This is the end of Wild Wild Life");
 
 ////////////////////////////////
 // Yell at the Ninja Turtles
