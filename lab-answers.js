@@ -5,7 +5,7 @@
 for (let i = 1; i < 21; i++) {
 	console.log(i);
 }
-console.log("This is the end of Easy Going");
+console.log("This is the end of 'Easy Going'");
 
 ////////////////////////////////
 // Get Even
@@ -14,7 +14,7 @@ console.log("This is the end of Easy Going");
 for (let i = 0; i < 201; i+=2) {
 	console.log(i);
 }
-console.log("This is the end of Get Even");
+console.log("This is the end of 'Get Even'");
 
 ////////////////////////////////
 // Fizz Buzz
@@ -35,7 +35,7 @@ for (let i = 1; i < 101; i++) {
         console.log(i);
     }
 }
-console.log("This is the end of Fizz Buzz");
+console.log("This is the end of 'Fizz Buzz'");
 
 ////////////////////////////////
 // Wild Wild Life 
@@ -62,17 +62,25 @@ console.log(dart);
 // 4. Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array and replace it with "Gameboy".
 let porgeeIsBossy = wolfy.splice(0,1, 'Gameboy')
 console.log(wolfy);
-console.log("This is the end of Wild Wild Life");
+console.log("This is the end of 'Wild Wild Life'");
 
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
-
+// 1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo).
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+// 2. Use a for of loop to call toUpperCase() on each of them and print out the result. Haven't heard of for of loops?
+for (const name of ninjaTurtles) {
+    const uppercaseTurtle = name.toUpperCase();
+    console.log(uppercaseTurtle);
+  }
+console.log("This is the end of 'Yell at the Ninja Turtles'");
 
 ////////////////////////////////
 // Methods, Revisted
 ////////////////////////////////
 
+console.log("This is the end of 'Methods,Revisted'");
 
 ////////////////////////////////
 // Where is Waldo
