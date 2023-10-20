@@ -5,11 +5,16 @@
 for (let i = 1; i < 21; i++) {
 	console.log(i);
 }
+console.log("this is the end for Easy Going");
 
 ////////////////////////////////
 // Get Even
 ////////////////////////////////
 //Write a for loop that will log only the even numbers in 0 through 200.
+for (let i = 0; i < 201; i+=2) {
+	console.log(i);
+}
+console.log("this is the end for Get Even");
 
 ////////////////////////////////
 // Fizz Buzz
