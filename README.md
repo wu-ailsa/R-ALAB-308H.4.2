@@ -220,3 +220,6 @@ Thom wants to do inventory on his closet. Using bracket notation, log the arrays
 
 The commit message should read: "Hungry for More: Complete"
 
+
+Copyright © Per Scholas 2023
+
