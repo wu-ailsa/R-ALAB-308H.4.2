@@ -79,8 +79,58 @@ console.log("This is the end of 'Yell at the Ninja Turtles'");
 ////////////////////////////////
 // Methods, Revisted
 ////////////////////////////////
-
-console.log("This is the end of 'Methods,Revisted'");
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// 0. Console log the index of Titanic.
+const indexOfTitanic = favMovies.indexOf('Titanic');
+console.log("The index of 'Titanic' is [" + indexOfTitanic + "].");
+// 1. Use the .sort method.
+favMovies.sort();
+console.log(favMovies);
+//     Thought Question: What did this do to the array? Did it permanently alter it? // It has permanently sorted favMovies alphabetically. 
+// 2. Use the method pop.
+console.log(favMovies.pop());
+console.log(favMovies);
+// 3. push "Guardians of the Galaxy".
+favMovies.push("Guardians of the Galaxy");
+console.log(favMovies);
+// 4. Reverse the array.
+const reversedMovies = favMovies.reverse();
+console.log('Reversed:', reversedMovies);
+console.log(favMovies);
+// 5. Use the shift method.
+const shiftRemovesFirst = favMovies.shift();
+console.log(shiftRemovesFirst,favMovies);
+// 6. unshift - what does it return? //It returns a new string attached to the beginning of the favMovies array
+favMovies.unshift('Encanto');
+console.log(favMovies);
+// 7. splice "Django Unchained" and add "Avatar" (try finding the index of "Django Unchained" instead of counting it yourself).
+const indexOfDjango = favMovies.indexOf('Django Unchained');
+console.log(indexOfDjango);
+favMovies.splice(15,1, 'Avatar');
+console.log(favMovies);
+//     Thought Question: Did this permanently alter our array? //yes
+//     slice the last half of the array. (Challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it.)
+const middleIndex = favMovies[Math.floor(favMovies.length / 2)];
+console.log(middleIndex);
+const indexOfMiddle = favMovies.indexOf(middleIndex);
+console.log("The index of the middle of the array is [" + indexOfMiddle + "].");
+const slicedMovies = favMovies.slice(9);
+console.log("Movies, sliced: " + slicedMovies); 
+console.log("This is the list of favorite movies: " + favMovies);
+//     Thought Question: Did this permanently alter our array? // slice did not permanently alter the array
+// 8. Store the value of your slice in a variable and console.log it.
+//     Thought Question: What is going on here? 
+console.log(slicedMovies);
+// 9. console.log your final results.
+console.log(favMovies);
+// 10. After running the above tasks, console.log the index of "Fast and Furious."
+const indexOfFaF = favMovies.indexOf('Fast and Furious');
+console.log("The index of Fast and Furious is [" + indexOfFaF + "].");
+// 11. We removed it from the array. What value do we get when we look for the index of something that is not in the array?// Django exists on index "-1."
+const newIndexOfDjango = favMovies.indexOf('Django Unchained');
+console.log(newIndexOfDjango);
+//     Thought Question: We declared the variable favMovies with const, and yet we were allowed to change the array. Weird? Should we have used let?
+console.log("This is the end of 'Methods, Revisted'");
 
 ////////////////////////////////
 // Where is Waldo
