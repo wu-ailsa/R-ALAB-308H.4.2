@@ -5,7 +5,7 @@
 for (let i = 1; i < 21; i++) {
 	console.log(i);
 }
-console.log("this is the end for Easy Going");
+console.log("This is the end of Easy Going");
 
 ////////////////////////////////
 // Get Even
@@ -14,12 +14,28 @@ console.log("this is the end for Easy Going");
 for (let i = 0; i < 201; i+=2) {
 	console.log(i);
 }
-console.log("this is the end for Get Even");
+console.log("This is the end of Get Even");
 
 ////////////////////////////////
 // Fizz Buzz
 ////////////////////////////////
-
+// 1. Write a Javascript Application that logs all numbers from 1 - 100.
+// 2. If a number is divisible by 3, log "Fizz" instead of the number.
+// 3. If a number is divisible by 5, log "Buzz" instead of the number.
+// 4. If a number is divisible by 3 and 5, log "FizzBuzz" instead of the number. The commit message should read: "Fizz Buzz answered"
+for (let i = 1; i < 101; i++) {
+	
+    if (i % 3 === 0) {
+        console.log("Fizz")
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+    } else {
+        console.log(i);
+    }
+}
+console.log("This is the end of Fizz Buzz");
 
 ////////////////////////////////
 // Wild Wild Life 
