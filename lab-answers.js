@@ -135,7 +135,38 @@ console.log("This is the end of 'Methods, Revisted'");
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
-
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                      ["Lucinda", "Jacc", "Neff", "Snoop"],
+                      ["Petunia", ["Baked Goods", "Waldo"]]];
+// 1. Remove Eggbert (hint look at the slice/splice methods).
+const indexOfEggbert = whereIsWaldo.indexOf('Eggbert');
+console.log(indexOfEggbert);
+const removeEggbert = whereIsWaldo.splice(indexOfEggbert, 1);
+console.log(whereIsWaldo);
+// 2. Change "Neff" to "No One".
+// Loop through the outer array
+for (let i = 0; i < whereIsWaldo.length; i++) {
+    if (Array.isArray(whereIsWaldo[i])) {
+      for (let j = 0; j < whereIsWaldo[i].length; j++) {
+        if (whereIsWaldo[i][j] === 'Neff') {
+          whereIsWaldo[i][j] = 'No One';
+        }
+      }
+    }
+  }
+// console.log(whereIsWaldo);
+console.log(whereIsWaldo);
+// 3. Access and console.log "Waldo".
+/*
+const whereIsWaldo = [
+  ['Timmy', 'Frank'],
+  ['Lucinda', 'Jacc', 'No One', 'Snoop'],
+  ['Petunia', ['Baked Goods', 'Waldo']]
+];
+*/
+const hiWaldo = whereIsWaldo[2][1][1];
+console.log(hiWaldo);
+console.log("This is the end of 'Where is Waldo'");
 
 ////////////////////////////////
 // Excited Kitten

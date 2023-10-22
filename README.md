@@ -132,11 +132,12 @@ With the following multi-dimensional array:
 const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
                       ["Lucinda", "Jacc", "Neff", "Snoop"],
                       ["Petunia", ["Baked Goods", "Waldo"]]];
+```
 Remove Eggbert (hint look at the slice/splice methods).
 Change "Neff" to "No One".
 Access and console.log "Waldo".
 The commit message should read: "Where is Waldo answered"
-```
+
 
 ## Excited Kitten
 1. Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
