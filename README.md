@@ -133,9 +133,10 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
                       ["Lucinda", "Jacc", "Neff", "Snoop"],
                       ["Petunia", ["Baked Goods", "Waldo"]]];
 ```
-Remove Eggbert (hint look at the slice/splice methods).
-Change "Neff" to "No One".
-Access and console.log "Waldo".
+1. Remove Eggbert (hint look at the slice/splice methods).
+2. Change "Neff" to "No One".
+3. Access and console.log "Waldo".
+
 The commit message should read: "Where is Waldo answered"
 
 

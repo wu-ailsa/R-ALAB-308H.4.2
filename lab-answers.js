@@ -171,13 +171,49 @@ console.log("This is the end of 'Where is Waldo'");
 ////////////////////////////////
 // Excited Kitten
 ////////////////////////////////
+// 1. Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+// for (let i = 1; i <= 20; i++) {
+//     console.log("Love me, pet me! HSSSSSS!");
+//   }
 
+// 2. For every even number in your loop, log "...human... why you taking pictures of me...?", "...the catnip made me do it...", or "...why does the red dot always get away...?" at random.
+function getRandomMessage() {
+    const messages = [
+      "...human... why you taking pictures of me...",
+      "...the catnip made me do it...",
+      "...why does the red dot always get away...",
+    ];
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    return messages[randomIndex];
+  }
+
+
+for (let i = 0; i <= 20; i++) {
+
+    if (i % 2 !== 0) {
+        console.log("Love me, pet me! HSSSSSS!");
+    } else {
+        const kittenVoiceLine = getRandomMessage();
+        console.log(kittenVoiceLine);
+    }
+  }
+
+console.log("This is the end of 'Excited Kitten'");
 
 ////////////////////////////////
 // Find the Median
 ////////////////////////////////
+/*
+1. Find the median number in the following nums array, then console.log that number.
 
+* Hint: If you check the length of the array divided by two, you might get not get a whole number. In which case, look into Math.floor().
+```
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 
+// Expected output: 15
+```
+The commit message should read: "Find the Median answered"
+*/
 /////////////////////////////////////////////////////
 // Hungry for More?                                //
 /////////////////////////////////////////////////////
