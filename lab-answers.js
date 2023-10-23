@@ -203,17 +203,33 @@ console.log("This is the end of 'Excited Kitten'");
 ////////////////////////////////
 // Find the Median
 ////////////////////////////////
-/*
-1. Find the median number in the following nums array, then console.log that number.
-
-* Hint: If you check the length of the array divided by two, you might get not get a whole number. In which case, look into Math.floor().
-```
 const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 
-// Expected output: 15
-```
-The commit message should read: "Find the Median answered"
+// 1. Find the median number in the following nums array, then console.log that number.
+//put numbers in order
+nums.sort((a, b) => a - b);
+console.log(nums);
+/* const nums is now =[
+    11, 11, 11, 11, 12, 12, 12, 12,
+    13, 14, 14, 15, 15, 15, 15, 16,
+    16, 17, 17, 17, 18, 18, 19, 19,
+    71] 
 */
+//find how many numbers are in array, even or odd number, aka the length of the array
+const length = nums.length;
+console.log("Length of the 'nums' is [" + length + "]");
+
+const middle = Math.floor(nums.length / 2);
+
+if (nums.length % 2 === 1) {
+    const median = nums[middle];
+    console.log("The median is " + median + ".");
+};
+
+// * Hint: If you check the length of the array divided by two, you might get not get a whole number. In which case, look into Math.floor().
+// Expected output: 15
+console.log("This is the end of 'Find the Median'");
+
 /////////////////////////////////////////////////////
 // Hungry for More?                                //
 /////////////////////////////////////////////////////
